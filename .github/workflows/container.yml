@@ -1,6 +1,14 @@
 {
   "name": "deploy-container",
   "on": {
+    "workflow_dispatch": {
+      "branches": [
+        "master"
+      ],
+      "paths": [
+        "packages/container/**"
+      ]
+    },
     "push": {
       "branches": [
         "master"
