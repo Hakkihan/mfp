@@ -1,7 +1,9 @@
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+
 export const commonConfig = {
     // entry: './src/index.js',
     // output: './dist/main.js',
-    module:{
+    module: {
         rules: [
             {
                 test: /\.m?js$/,
@@ -18,6 +20,11 @@ export const commonConfig = {
                 },
             },
         ],
-    }
-    
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './public/index.html'
+        }),
+    ],
+
 };

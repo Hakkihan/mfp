@@ -1,5 +1,5 @@
 import {merge as webpackMerge}  from 'webpack-merge';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+// import HtmlWebpackPlugin from 'html-webpack-plugin';
 import {commonConfig} from './webpack.common.js';
 import ModuleFederationPlugin from 'webpack/lib/container/ModuleFederationPlugin.js';
 // import { Module } from 'webpack';
@@ -14,9 +14,6 @@ const devConfig = {
         },
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './public/index.html'
-        }),
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
