@@ -1,6 +1,6 @@
 # mfp
 
-Utilising microfrontend. Needs npm run start in each individual microfrontend (marketing, auth, dashboard and container) in order to function correctly. Uses webpack to configure plugins/ports/etc
+Utilising and exploring microfrontend via Module Federation. Needs npm run start in each individual microfrontend (marketing, auth, dashboard and container) in order to function correctly. Uses webpack to configure plugins/ports/etc. Hosted on AWS as well (CloudFront).
 
 ![image](https://github.com/Hakkihan/mfp/assets/36494569/eb8ef897-5076-43fa-9876-f9b44686e061)
 
